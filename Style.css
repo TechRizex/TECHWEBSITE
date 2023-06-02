@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding:  0;
+    
+ }
+ .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(  https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+ nav{
+    display: flex;
+    padding: 0% 0.4%;
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav img{
+    width: 100px;
+    position: left;
+    align-items: left;
+ }
+ .nav-links{
+    flex: 1;
+    text-align: right;
+    
+ }
+ .nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 10px 12px;
+    position: relative;
+ }
+ .nav-links ul li a{
+    color :#fff;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+ }
+ .nav-links ul li:hover::after
+ {
+
+    width: 100%;
+ }
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+    
+}
+.text-box p{
+  margin: 58px 0 51px;
+    font-size: 22px;
+    color: #fff;
+    
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    
+}
+nav .fa{
+
+     display: none;
+}
+@media(max-width: 700px) {
+    
+  .header{
+    min-height: 150vh;
+    width: 100%;
+  }
+
+    .text-box h1{
+        font-size: 20px;
+        
+    }
+    .nav-links ul li{
+        display: block;
+    }
+  .Technique h1{
+    font-size: 10px;
+    
+  }
+  .Technique h3{
+    font-size: 20px;
+    text-align: left;
+  }
+  .Technique p  {
+    font-size: 10px;
+    text-align: left;
+  }
+  .Technique img{
+    text-align: left;
+    width: 200px;
+  }
+    }
+section{
+        background-color: plum;
+    
+    }
+
+.Technique{
+    width: 80%;
+    
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+
+}
+h1{
+ 
+    font-size: 57px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    color: #080606;
+    font-size: 25px;
+    font-weight: 1oo;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Technique-col{
+   
+     
+    text-align: center;
+  
+}
+.Technique h3{
+  
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 45px;
+    color:#b40c30
+
+    
+}
+ .border-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(3, 4, 15);
+    border: 1px solid rgb(33, 24, 209);
+    padding: 12px 34px;
+    font-size: 23px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+ }
+.border-btn:hover{
+    border: 1px solid #d2c2c0;
+    background: #ebc7c5;
+    transition: 1s;
+    
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
